@@ -16,4 +16,4 @@ https://kelasrobot.com/bagaimana-cara-memasukan-library-ke-aplikasi-arduino-ide/
 2. Kabel Micro USB | https://www.tokopedia.com/kelasrobot/kabel-micro-usb-android-kabel-download-nodemcu-arduino-microusb-xiaomi
 
 ## VIDEO TUTORIAL
-*coming soon*
+*coming soon > * https://youtube.com/kelasrobot 
