@@ -3,5 +3,5 @@ Sebuah Proyek **OPEN SOURCE** untuk mengendalikan Relay 4 Channel melalui Telegr
 
 Bisa menggunakan Board **ESP8266** (NodeMCU, Wemos, dll) dan **ESP32**.
 
-# Library Yang Harus Ditambahkan ke Arduino IDE
+## Library Yang Harus Ditambahkan ke Arduino IDE
 1. 
