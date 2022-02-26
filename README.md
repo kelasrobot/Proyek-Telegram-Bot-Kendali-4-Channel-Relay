@@ -8,3 +8,12 @@ Bisa menggunakan Board **ESP8266** (NodeMCU, Wemos, dll) dan **ESP32**.
 2. ArduinoJson | https://github.com/bblanchon/ArduinoJson
 3. SSLClient | https://github.com/OPEnSLab-OSU/SSLClient
 
+Cara Menambahkan Library ke Arduino IDE:
+https://kelasrobot.com/bagaimana-cara-memasukan-library-ke-aplikasi-arduino-ide/
+
+## Komponen yang dibutuhkan
+1. ESP32 DOIT DEV KIT +Relay Shield 4 Channel | https://www.tokopedia.com/kelasrobot/relay-4-channel-shield-for-nodemcu-amica-lolin-dan-esp32-dev-kit-esp32-dev-kit
+2. Kabel Micro USB | https://www.tokopedia.com/kelasrobot/kabel-micro-usb-android-kabel-download-nodemcu-arduino-microusb-xiaomi
+
+## VIDEO TUTORIAL
+*coming soon*
