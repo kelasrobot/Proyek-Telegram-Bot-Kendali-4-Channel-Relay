@@ -23,15 +23,17 @@ WiFiClientSecure client;
 #endif
 AsyncTelegram2 myBot(client);
 
-
-
 void setup() {
+
   pinMode(relay1, OUTPUT);
   digitalWrite(relay1, HIGH);
   pinMode(relay2, OUTPUT);
   digitalWrite(relay2, HIGH);
   pinMode(relay3, OUTPUT);
   digitalWrite(relay3, HIGH);
+  pinMode(relay4, OUTPUT);
+  digitalWrite(relay4, HIGH);
+
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(115200);
   Serial.println("\nStarting TelegramBot...");
@@ -57,11 +59,6 @@ void setup() {
   myBot.setTelegramToken(token);
   Serial.print("\nTest Telegram connection... ");
   myBot.begin() ? Serial.println("OK") : Serial.println("NOK");
-
-  //  char welcome_msg[128];
-  //  snprintf(welcome_msg, 128, "BOT @%s online\n/help all commands avalaible.", myBot.getBotName());
-  //  int64_t userid = 123456789;
-  //  myBot.sendTo(userid, welcome_msg);
 
 }
 
@@ -89,6 +86,8 @@ void loop() {
       pesan += "/lampu2OFF untuk mematikan lampu 2\n";
       pesan += "/lampu3ON untuk menyalakan lampu 3\n";
       pesan += "/lampu3OFF untuk mematikan lampu 3\n";
+      pesan += "/lampu4ON untuk menyalakan lampu 4\n";
+      pesan += "/lampu4OFF untuk mematikan lampu 4\n";
       myBot.sendMessage(msg, pesan);
     }
     if (msg.text == "/lampu1ON") {
@@ -120,6 +119,16 @@ void loop() {
       digitalWrite(relay3, HIGH);
       delay(1000);
       myBot.sendMessage(msg, "Lampu 3 Telah Dimatikan!");
+    }
+    if (msg.text == "/lampu4ON") {
+      digitalWrite(relay4, LOW);
+      delay(1000);
+      myBot.sendMessage(msg, "Lampu 4 Telah Dinyalakan!");
+    }
+    if (msg.text == "/lampu4OFF") {
+      digitalWrite(relay4, HIGH);
+      delay(1000);
+      myBot.sendMessage(msg, "Lampu 4 Telah Dimatikan!");
     }
 
   }
